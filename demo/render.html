@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript" src="../zepto.js"></script>
+<script type="text/javascript" src="../extend/render.js"></script>
+<script type="text/javascript">
+    var html = "<div>" +
+            "<a href='{$link}' title='{$title}'>{$title}</a>" +
+        "</div>",
+        data = {
+            link: "http://google.com",
+            title: "Google"
+        };
+    $("body").append($.render(html, data));
+</script>
+</body>
+</html>
